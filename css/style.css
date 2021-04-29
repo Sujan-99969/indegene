@@ -1,0 +1,570 @@
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+.header {
+  width: 100%;
+  justify-content: space-between;
+}
+.header-logo {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 230px;
+  height: 73px;
+  padding-left: 100px;
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+.social-bg {
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  margin: 4px;
+}
+.menubar {
+  font-weight: 100;
+  color: gray;
+  text-align: center;
+}
+.menu {
+  width: 25px;
+}
+/* MENU DROPDOWN */
+a {
+  text-decoration: none;
+}
+
+nav {
+  font-family: monospace;
+  z-index: 999;
+}
+
+ul {
+  background: darkorange;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: #fff;
+  background: #fff;
+  display: block;
+  float: left;
+  width: 0%;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+li a {
+  color: #000;
+  font-weight: bold;
+}
+
+li:hover {
+  background: #ffffff;
+  cursor: pointer;
+}
+
+ul li ul {
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 97rem;
+  position: absolute;
+  padding-left: 112px;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: -93rem;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+  padding: 25px;
+}
+
+.cover-bg {
+  height: 70vh;
+}
+.cover-img {
+  height: 70vh;
+}
+.cover-bg-text {
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  color: #ffffff;
+}
+.sub-title {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.global-btn {
+  width: 10%;
+  background-color: #b69e7f;
+  border: none;
+  height: 7vh;
+  color: #ffffff;
+  margin-right: 5px;
+}
+.explore-btn {
+  width: 8%;
+  background-color: #ffffff;
+  border: none;
+  height: 7vh;
+  color: #000000;
+}
+.play-btn-align {
+  /* margin-top: 4px; */
+  align-items: center;
+  margin-left: 20px;
+  width: 84%;
+  /* column-count: 2; */
+  display: flex;
+}
+.play-btn {
+  width: 15px;
+  height: 15px;
+}
+.play-text {
+  width: auto;
+  font-size: 13px;
+  font-weight: 100;
+}
+.cover-photo {
+  position: relative;
+}
+.cover-bg-layer {
+  position: absolute;
+  top: -13px;
+  left: 0;
+}
+.bg-layer {
+  width: 50%;
+  height: 90vh;
+  opacity: 0.4;
+}
+.maincover-bg-text {
+  position: absolute;
+  top: 30%;
+  left: 8%;
+  text-align: left;
+  color: #000000;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.font-style {
+  font-weight: 100;
+}
+.maincover-subtitle {
+  margin-top: 20px;
+  display: flex;
+  justify-content: left;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+/* SERVICES */
+
+.services {
+  width: 100%;
+  height: 88vh;
+  position: relative;
+}
+.white-bg {
+  width: 100%;
+  height: 80vh;
+}
+.services-text {
+  width: 76%;
+  position: absolute;
+  text-align: center;
+  top: 10%;
+  padding: 0px 251px 0px 203px;
+  color: #000000;
+}
+.service-subtitle {
+  font-style: italic;
+  color: #943a7c;
+  font-weight: 100;
+}
+.service-mono {
+  justify-content: space-between;
+
+  display: flex;
+  column-count: 2;
+}
+.mono1 {
+  display: flex;
+}
+.mono-width {
+  width: 60%;
+}
+.head-wrap-left {
+  text-align: left;
+  font-weight: 100;
+  font-size: 20px;
+}
+.head-wrap-right {
+  font-size: 20px;
+  text-align: end;
+  font-weight: 100;
+  padding-top: 25px;
+}
+.text-wrap {
+  color: #b5269c;
+  text-align: start;
+  font-size: 15px;
+  opacity: 0.6;
+  padding-top: 25px;
+}
+.mono-in {
+  width: 50%;
+}
+.pink-bg1 {
+  width: 100px;
+  position: relative;
+  left: 29px;
+  top: 10px;
+}
+.pink-bg1:hover {
+  box-shadow: 0 0 20px 0px black;
+  border-radius: 50px;
+}
+.pink-bg2 {
+  width: 100px;
+  position: relative;
+  left: -43px;
+  top: 10px;
+}
+.pink-bg2:hover {
+  box-shadow: 0 0 20px 0px black;
+  border-radius: 50px;
+}
+.pink-align {
+  width: 40%;
+  padding-top: 20px;
+}
+
+.service-hand {
+  position: absolute;
+  top: 21%;
+  left: 40%;
+  width: 88px;
+}
+.service-tag {
+  position: absolute;
+  top: 21%;
+  left: 50%;
+  width: 79px;
+}
+.service-analasys {
+  position: absolute;
+  top: 49%;
+  left: 40%;
+  width: 102px;
+}
+.service-lab {
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  width: 106px;
+}
+.service-care {
+  position: absolute;
+  top: 75%;
+  left: 40%;
+  width: 106px;
+}
+.service-laptop {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  width: 106px;
+}
+
+.testmonials {
+  position: relative;
+}
+.text-center {
+  text-align: center;
+  position: absolute;
+  top: 10%;
+}
+.spring-text {
+  font-weight: 100;
+  color: #ffffff;
+  font-size: 45px;
+}
+.spring {
+  height: 100vh;
+}
+.persons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.user1 {
+  position: absolute;
+  top: 25%;
+
+  width: 12%;
+}
+.user1:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s; /* Animation */
+}
+.user2 {
+  position: absolute;
+  top: 25%;
+
+  width: 12%;
+}
+.user2:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s; /* Animation */
+}
+
+.user3 {
+  position: absolute;
+  top: 25%;
+
+  width: 12%;
+}
+.user3:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s; /* Animation */
+}
+.user-align {
+  text-align: center;
+  display: flex;
+}
+
+.user-text {
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 18px;
+  text-align: center;
+}
+.user-name {
+  font-style: italic;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 28px;
+}
+.ourblog {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.blog-text {
+  text-align: center;
+  position: absolute;
+  top: 10%;
+}
+.blog-kit {
+  width: 84%;
+}
+.blog-kit:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s; /* Animation */
+}
+.blogcontent1 {
+  display: flex;
+  padding-top: 35px;
+}
+.blogcontent2 {
+  display: flex;
+}
+
+.pinklayer1 {
+  position: absolute;
+  height: 39vh;
+  width: 8%;
+  top: 100%;
+  left: 14%;
+  opacity: 0.6;
+}
+.pinklayer2 {
+  position: absolute;
+  height: 39vh;
+  width: 8%;
+  top: 100%;
+  left: 39%;
+  opacity: 0.6;
+}
+.pinklayer3 {
+  position: absolute;
+  height: 39vh;
+  width: 8%;
+  top: 100%;
+  opacity: 0.6;
+}
+.date1 {
+  position: absolute;
+  left: -32%;
+  top: 108%;
+}
+.date2 {
+  position: absolute;
+  left: -7%;
+  top: 108%;
+}
+.date3 {
+  position: absolute;
+  left: 17%;
+  top: 108%;
+}
+
+.blog-text1 {
+  position: absolute;
+  left: 24%;
+  top: 111%;
+  width: 12%;
+  text-align: start;
+}
+.blog-text2 {
+  position: absolute;
+  left: 49%;
+  top: 111%;
+  width: 12%;
+  text-align: start;
+}
+.blog-text3 {
+  position: absolute;
+  left: 73%;
+  top: 111%;
+  width: 12%;
+  text-align: start;
+}
+.date {
+  color: #795548;
+  font-size: 50px;
+  opacity: 0.6;
+}
+.month {
+  opacity: 0.5;
+  font-size: 16px;
+  color: #795548;
+
+}
+
+/* FOOTER */
+.footer {
+  position: relative;
+  margin-top: 65px;
+}
+.sletter {
+  position: absolute;
+  top: 20%;
+  font-size: 25px;
+  font-weight: 100;
+  text-align: center;
+  color: #ffffff;
+}
+.sletter-text {
+  font-weight: 100;
+}
+input {
+  padding-left: 25px;
+  width: 30%;
+  font-size: 20px;
+  height: 7vh;
+}
+/* .subscribe-btn{
+  color: #b69e7f;
+} */
+.subscribe-btn {
+  width: 8%;
+  background-color: #b69e7f;
+  border: none;
+  height: 7vh;
+  color: #ffffff;
+}
+
+.subscribe-text {
+  width: auto;
+  font-size: 17px;
+  font-weight: 100;
+}
+.footerinput {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.copyrignt {
+  margin-top: 25px;
+  font-size: 15px;
+  word-spacing: 18px;
+}
+
+/* COMMON CSS PROPERTIES */
+
+.m-t-30 {
+  margin-top: 30px;
+}
+
+.m-t-4 {
+  margin-top: 4px;
+}
+.m-t-10 {
+  margin-top: 10px;
+}
+.p-t-25 {
+  padding-top: 25px !important;
+}
+.p-t-10 {
+  padding-top: 10px !important;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 150px;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 150px;
+}
+
+.height-0 {
+  height: 0;
+}
+
+/* MEDIA QUIRIES */
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  * {
+    width: 131%;
+  }
+  .header {
+    width: 131%;
+  }
+}
